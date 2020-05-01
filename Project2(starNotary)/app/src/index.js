@@ -49,7 +49,7 @@ const App = {
     const { lookupTokenIdToStarInfo }  = this.meta.methods;
     const id = document.getElementById("lookId").value;
 
-    await lookupTokenIdToStarInfo(id).call().then((name) => {
+    await lookUptokenIdToStarInfo(id).call().then((name) => {
         //console.log;
         App.setLookup("Star: Id = " + id + ", Name = " +name);
     });
